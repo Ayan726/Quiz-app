@@ -1,8 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Quiz App
+
+## Overview
+
+Welcome to the Quiz App! This application allows users to participate in a quiz, submit their answers, and receive scores along with correct and incorrect answers feedback.
+
+## Features
+
+- **Email Submission:** Users are required to submit their email before accessing the quiz.
+- **Quiz Overview Panel:** Navigate between questions easily using the overview panel.
+- **Color Indicators:**
+  - **Attempted Questions:** Displayed in green color.
+  - **Unattempted Questions:** Displayed in red color.
+  - **Current Question:** Highlighted in blue for easy identification.
+- **Timer:** A timer is available for each question, automatically submitting the answers when the timer is up.
+- **Submission:**
+  - Users can manually submit their answers.
+  - Automatic submission if the timer expires.
+- **Results Page:**
+  - View scores after submission.
+  - Review correct and incorrect answers.
+
 
 ## Getting Started
 
-First, run the development server:
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+Clone the Repository and install dependencies:
+   ```bash
+   git clone https://github.com/your-username/quiz-app.git
+   cd quiz-app
+   npm i
+   ```
+Add a .env.local and add your quiz api key as NEXT_PUBLIC_API_KEY
+
+run the development server:
 
 ```bash
 npm run dev
