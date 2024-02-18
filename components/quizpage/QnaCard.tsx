@@ -117,9 +117,8 @@ const QnaCard = () => {
               >
                 <RadioGroupItem
                   className={cn(
-                    correctAnswers[active].includes(
-                      ans + "$" + active.toString()
-                    ) &&
+                    correctAnswers[active][0] ===
+                      ans + "$" + active.toString() &&
                       submitted &&
                       "bg-green-400 rounded-full",
                     answers[active] === ans + "$" + active.toString() &&

@@ -21,7 +21,7 @@ export const useStore = create<State>()((set) => ({
   answers: arr,
   active: 0,
   loading: true,
-  timeLeft: 900,
+  timeLeft: 1800,
   submitted: false,
   score: 0,
   setScore: (val) => {
